@@ -1,0 +1,40 @@
+@import '../../../styles/base';
+
+.inputForm {
+  width: 100%;
+  margin-bottom: 1rem;
+  &--label {
+    display: block;
+    font-weight: bold;
+    color: $secondary-color;
+    margin-bottom: 0.2rem;
+  }
+  &--box {
+    border: 1px solid transparentize($color: $secondary-color, $amount: 0.75);
+    border-radius: 0.25rem;
+    @include flexbox($justify: stretch, $align: flex-start);
+    &.isActive {
+      border-color: $secondary-color;
+    }
+    &.isError {
+      border-color: $primary-color;
+    }
+  }
+  &--input {
+    flex: 1 1 auto;
+    border: 0 none;
+    padding: 0.5rem 1rem;
+    font: 1rem/1 'Quicksand', sans-serif;
+  }
+  &--error {
+    color: $primary-color;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  &--length {
+    text-align: right;
+    color: transparentize($color: $secondary-color, $amount: 0.55);
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+}

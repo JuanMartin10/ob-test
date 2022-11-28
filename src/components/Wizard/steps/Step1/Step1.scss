@@ -1,0 +1,46 @@
+@import '../../../../styles/base';
+
+.info {
+  &--picts {
+    margin-bottom: 2rem;
+    img {
+      display: block;
+      margin: 2rem auto 1rem;
+      height: 10rem;
+    }
+    @include tablet {
+      @include flexbox($align: flex-start);
+      li {
+        padding: 0 2rem;
+        flex: 1 1 50%;
+      }
+    }
+  }
+  &--check {
+    margin-top: 3rem;
+    input {
+      display: none;
+      &:checked + label::before {
+        content: '√';
+        background-color: $secondary-color;
+      }
+    }
+    label {
+      padding-left: 2rem;
+      display: block;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        @include flexbox($justify: center);
+        font-weight: bold;
+        left: 0;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.2rem;
+        border: 2px solid $secondary-color;
+        color: #fff;
+      }
+    }
+  }
+}

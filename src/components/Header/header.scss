@@ -1,0 +1,38 @@
+@import '../../styles/base';
+@import '../../styles/buttons';
+
+#header {
+  padding: 1.5rem 0;
+  background-color: transparentize($color: $secondary-color, $amount: 0.7);
+  position: relative;
+  .container {
+    @include flexbox();
+    padding: 0 12px;
+  }
+  .tools {
+    @include tablet {
+      &--toggle {
+        display: none;
+      }
+    }
+    @include only_mobile {
+      .language {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: #fff;
+        &.showMenu {
+          @include flexbox($direction: column, $align: stretch);
+          button {
+            border-bottom: 1px solid
+              transparentize($color: $secondary-color, $amount: 0.7);
+            padding: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}

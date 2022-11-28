@@ -1,0 +1,11 @@
+// FLEX
+//
+// + flexbox
+//
+
+@mixin flexbox($direction: row, $justify: space-between, $align: center){
+  display: flex;
+  flex-flow: $direction nowrap;
+  justify-content: $justify;
+  align-items: $align;
+}

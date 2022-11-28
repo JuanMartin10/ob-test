@@ -1,0 +1,49 @@
+/* ==================================================
+      MEDIA QUERIES BREAKPOINTS
+================================================== */
+
+$viewports:(
+  'mobile-xs':            320px,
+  'mobile':               480px,
+  'tablet':               768px,
+  'laptop':               1024px,
+  'desktop':              1200px,
+);
+
+@function vp($viewport) {
+  @return map-get($viewports, $viewport);
+}
+
+
+/* ==================================================
+      VIEWS :: MIXINS
+================================================== */
+
+// exclusivas
+@mixin only_mobile{
+  @media ( max-width: vp('mobile') ){
+    @content;
+  }
+}
+
+// crecientes
+@mixin tablet{
+  @media ( min-width: (vp('mobile') + 1) ) {
+    @content;
+  }
+}
+@mixin laptop{
+  @media ( min-width: (vp('tablet') + 1) ) {
+    @content;
+  }
+}
+@mixin desktop{
+  @media ( min-width: (vp('laptop') + 1) ) {
+    @content;
+  }
+}
+@mixin desktop_xl{
+  @media ( min-width: (vp('desktop') + 1)  ) {
+    @content;
+  }
+}

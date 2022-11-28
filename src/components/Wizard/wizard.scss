@@ -1,0 +1,21 @@
+@import '../../styles/base';
+
+.wizard {
+  padding-top: 2rem;
+
+  border-radius: 0.25rem;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 3px transparentize($color: $secondary-color, $amount: 0.85);
+
+  &--content {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    @include tablet {
+      padding: 2rem 4rem;
+    }
+    @include laptop {
+      padding: 3rem 6rem;
+      margin: 1rem 3rem;
+    }
+  }
+}

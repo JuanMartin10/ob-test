@@ -1,0 +1,19 @@
+@import '../../../../styles/base';
+
+.pm {
+  &--textInfo {
+    margin-bottom: 1rem;
+    p {
+      margin-bottom: 0.8rem;
+    }
+    small {
+      font-size: 0.75em;
+    }
+  }
+  @include tablet {
+    &--pwds {
+      @include flexbox($align: flex-start);
+      gap: 2rem;
+    }
+  }
+}
