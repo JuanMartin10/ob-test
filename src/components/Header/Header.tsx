@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import burger from '../../assets/icons/burger.svg';
-import openbanklogo from '../../assets/img/logo_openbank.png';
+import logo from '../../assets/img/logo.png';
 import { Langs } from './models';
 import './header.scss';
 
@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header id="header">
       <div className="container">
-        <img width={150} src={openbanklogo} alt="openbank-logo" />
+        <img width={150} src={logo} alt="logo" />
         <div className="tools">
           <button
             className="tools--toggle button transparent iconButton"

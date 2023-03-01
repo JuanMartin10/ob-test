@@ -12,7 +12,7 @@
   "como_funciona_desc": "En primer lugarm debes crear una contraseña diferente para tus pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien",
   "que_guardar_title": "Qué datos puedes guardar",
   "que_guardar_desc": "Por ejemplo, el número de tu tarjeta, el PIN y el PUK de tu teléfono móvil, el número de serie de alguno de tus dispositivos o cualquier información que necesites tener en un lugar seguro.",
-  "wizard_step1_label": "Soy mayor de edad y acepto que mis datos sean tratados conforme a la <a href='https://www.openbank.es/politica' target='_blank'>política de privacidad</a>.",
+  "wizard_step1_label": "Soy mayor de edad y acepto que mis datos sean tratados conforme a la <a href='https://www.google.es' target='_blank'>política de privacidad</a>.",
   "wizard_step2_intro": "<p>En primer lugar, debes crear una contraseña diferente para tus pertenencias electrónicas. <br /> No podrás recuperar tu contraseña, así que recuérdala bien.<br><small>(Debe contener de 8 a 24 caracteres y al menos 1 letra mayúscula y 1 número)</small></p>",
   "wizard_step2_hint": "<p>También puedes crear una pista que te ayude a recordar tu contraseña maestra.</p>",
   "Crea tu Contraseña Maestra": "Crea tu Contraseña Maestra",

@@ -25,7 +25,7 @@ describe('Testing <Layout /> component', () => {
   afterEach(cleanup);
 
   test('Should be rendered', () => {
-    expect(screen.getByAltText('openbank-logo')).toBeInTheDocument();
+    expect(screen.getByAltText('logo')).toBeInTheDocument();
     render(<Step1 actionCheck={() => {}} accept={false} />);
   });
 });

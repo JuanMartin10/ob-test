@@ -20,7 +20,7 @@ describe('Testing <Header /> component', () => {
   afterEach(cleanup);
 
   test('Should be rendered', () => {
-    expect(screen.getByAltText('openbank-logo')).toBeInTheDocument();
+    expect(screen.getByAltText('logo')).toBeInTheDocument();
     expect(screen.getByText('English')).toBeInTheDocument();
     expect(screen.getByText('Español')).toBeInTheDocument();
   });

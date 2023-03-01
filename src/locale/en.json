@@ -12,7 +12,7 @@
   "como_funciona_desc": "First you must create a different password for your electronic belongings. You will not be able to recover your password, so remember it well",
   "que_guardar_title": "What data can you save",
   "que_guardar_desc": "For example, your card number, the PIN and PUK of your mobile phone, the serial number of one of your devices or any information you need to have in a safe place.",
-  "wizard_step1_label": "I am of legal age and I accept that my data be treated according to the <a href='https://www.openbank.es/en/privacy-cookies' target='_blank'>privacy police</a>.",
+  "wizard_step1_label": "I am of legal age and I accept that my data be treated according to the <a href='https://www.google.es/' target='_blank'>privacy police</a>.",
   "wizard_step2_intro": "<p>First, you must create a different password for your electronic belongings. <br /> You will not be able to recover your password, so remember it well.<br><small>(Must contain 8 to 24 characters and at least 1 uppercase letter and 1 number)</small></p>",
   "wizard_step2_hint": "<p>You can also create a hint to help you remember your master password.</p>",
   "Crea tu Contraseña Maestra": "Create your Master Password",
